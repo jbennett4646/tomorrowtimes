@@ -1,7 +1,8 @@
+import { renderCards } from "./og/render.js";
+
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/icons");
-  eleventyConfig.addPassthroughCopy("src/share.png");
 
   // Plain-text teaser from rendered HTML, for link-preview descriptions
   eleventyConfig.addFilter("excerpt", (html, max = 160) => {
@@ -21,9 +22,22 @@ export default function (eleventyConfig) {
   });
 
   // All articles, newest first
-  eleventyConfig.addCollection("articles", (api) =>
-    api.getFilteredByGlob("src/articles/*.md").sort((a, b) => b.date - a.date)
-  );
+  let previewCards = [];
+  eleventyConfig.addCollection("articles", (api) => {
+    const articles = api.getFilteredByGlob("src/articles/*.md").sort((a, b) => b.date - a.date);
+    previewCards = articles.map((a) => ({ file: `${a.page.fileSlug}.png`, headline: a.data.title }));
+    return articles;
+  });
+
+  // Link-preview cards: one per article plus one for every other page, written to _site/og/
+  eleventyConfig.on("eleventy.after", async ({ dir, directories }) => {
+    const domain = new URL(process.env.SITE_URL || "https://tomorrow-times.news").host;
+    await renderCards(
+      [{ file: "home.png", headline: "Tomorrow’s news, delivered today. Additional fees may apply." }, ...previewCards],
+      `${(directories && directories.output) || dir.output}/og`,
+      domain
+    );
+  });
 
   eleventyConfig.addFilter("bySection", (articles, key) =>
     articles.filter((a) => a.data.section === key)
