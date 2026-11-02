@@ -11,7 +11,8 @@ export default function (eleventyConfig) {
     const back = src.indexOf('class="back"');
     if (back > -1) src = src.slice(0, src.lastIndexOf("<a", back)); // drop the "Back to the front page" link
     const text = src
-      .replace(/<[^>]+>/g, " ")
+      .replace(/<\/?(p|br|h\d|li|div)\b[^>]*>/g, " ") // block tags become spaces
+      .replace(/<[^>]+>/g, "") // inline tags (italics, bold, links) vanish without a gap
       .replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
       .replace(/\s+/g, " ")
       .trim(); // plain text; the template escapes it once when writing the tag
