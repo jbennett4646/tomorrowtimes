@@ -22,6 +22,7 @@
 {%- for s in sections %}<a href="{{ ('/' + s.key + '/') | url }}">{{ s.name }}</a>{% endfor %}
 </nav>
 <div class="cols">
+{%- if not hideLeftRail %}
 <aside class="left">
 <div class="box"><h3>Sections</h3>
 {%- for s in sections %}
@@ -30,6 +31,7 @@
 </div>
 <div class="box"><h3>Today’s Mood</h3><div class="mood"><img src="{{ '/icons/mood-concerned.svg' | url }}" width="90" height="60" alt=""><p>Concerned</p></div></div>
 </aside>
+{%- endif %}
 <main class="main">
 {{ content | safe }}
 </main>
