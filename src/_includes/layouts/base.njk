@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} | {% endif %}The Tomorrow Times</title>
+<meta name="description" content="{{ summary or title or 'Tomorrow’s news, delivered today.' }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap">
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+<link rel="icon" href="{{ '/icons/logo-clock.svg' | url }}" type="image/svg+xml">
+</head>
+<body>
+<div class="wrap">
+<header class="mast">
+<a href="{{ '/' | url }}"><img src="{{ '/icons/logo-clock.svg' | url }}" width="86" height="86" alt=""></a>
+<div><a href="{{ '/' | url }}"><p class="site-name">The Tomorrow Times</p></a><p>Tomorrow’s news, delivered today. Additional fees may apply.</p></div>
+</header>
+<nav class="nav" aria-label="Sections">
+<a href="{{ '/' | url }}">Home</a>
+{%- for s in sections %}<a href="{{ ('/' + s.key + '/') | url }}">{{ s.name }}</a>{% endfor %}
+</nav>
+<div class="cols">
+<aside class="left">
+<div class="box"><h3>Sections</h3>
+{%- for s in sections %}
+<a class="sec" href="{{ ('/' + s.key + '/') | url }}"><img src="{{ ('/icons/' + s.key + '.svg') | url }}" alt="">{{ s.name }}</a>
+{%- endfor %}
+</div>
+<div class="box"><h3>Today’s Mood</h3><div class="mood"><img src="{{ '/icons/mood-concerned.svg' | url }}" width="90" height="60" alt=""><p>Concerned</p></div></div>
+</aside>
+<main class="main">
+{{ content | safe }}
+</main>
+<aside class="right">
+<div class="box mustard"><h3>Weather</h3><div class="box-body"><strong>Tomorrow:</strong> 40% chance of rain.<br>100% chance of surcharge.</div></div>
+<div class="box mauve"><h3>Get Tomorrow Today</h3><div class="box-body signup">
+<form action="#" onsubmit="return false;">
+<label for="email">Email address</label>
+<input id="email" type="email" placeholder="your@email.com" autocomplete="email">
+<button type="submit">Sign Me Up!</button>
+</form>
+</div></div>
+</aside>
+</div>
+<footer class="foot">The Tomorrow Times is satire. All companies, people, and quotes are invented.</footer>
+</div>
+</body>
+</html>

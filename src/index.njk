@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+{%- set lead = collections.articles | cover %}
+{%- if lead %}
+<article class="lead"><span class="kick">COVER STORY</span>
+<h2><a href="{{ lead.url | url }}">{{ lead.data.title }}</a></h2>
+{%- if lead.data.summary %}<p>{{ lead.data.summary }}</p>{% endif %}
+</article>
+{%- endif %}
+<section class="list"><h3>More Headlines</h3>
+{%- for a in collections.articles | without(lead) | first(15) %}
+<a class="item" href="{{ a.url | url }}"><img src="{{ ('/icons/' + a.data.section + '.svg') | url }}" alt="">{{ a.data.title }}</a>
+{%- endfor %}
+</section>

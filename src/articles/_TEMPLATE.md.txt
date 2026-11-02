@@ -1,0 +1,12 @@
+---
+title: "Your Headline Goes Here"
+section: consumer
+date: 2026-11-03
+dateline: "CITY, ST"
+---
+
+First paragraph. Do not type the dateline here; it is added automatically from the line above.
+
+Second paragraph. Leave a blank line between paragraphs.
+
+At press time, ...

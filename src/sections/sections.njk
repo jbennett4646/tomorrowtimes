@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: sections
+  size: 1
+  alias: sec
+permalink: "/{{ sec.key }}/"
+eleventyComputed:
+  title: "{{ sec.name }}"
+---
+<section class="list" style="margin-top:0"><h3>{{ sec.name }}</h3>
+{%- set items = collections.articles | bySection(sec.key) %}
+{%- for a in items %}
+<a class="item" href="{{ a.url | url }}"><img src="{{ ('/icons/' + sec.key + '.svg') | url }}" alt="">{{ a.data.title }}</a>
+{%- else %}
+<p class="item">Nothing here yet. Which is, frankly, suspicious.</p>
+{%- endfor %}
+</section>

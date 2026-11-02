@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="34" height="34" overflow="visible"><style>
+@keyframes note{0%{transform:translate(0,0);opacity:0}20%{opacity:1}100%{transform:translate(14px,-30px);opacity:0}}
+.n1{animation:note 1.2s linear infinite;transform-box:fill-box}
+.n2{animation:note 1.2s linear infinite .6s;transform-box:fill-box}
+@media (prefers-reduced-motion:reduce){.n1,.n2{animation:none}}
+</style><circle cx="50" cy="30" r="20" fill="#F7F3E8" stroke="#2B2320" stroke-width="5"/><circle cx="43" cy="28" r="5" fill="#2B2320"/><circle cx="57" cy="28" r="5" fill="#2B2320"/><path d="M42 40h16" stroke="#2B2320" stroke-width="3"/><path d="M50 50v30M38 58q12 5 24 0M38 68q12 5 24 0" stroke="#2B2320" stroke-width="5" fill="none"/><path d="M24 22q-5 14 7 26l7-5q-7-9-4-19z" fill="#3E9A9C" stroke="#2B2320" stroke-width="4"/><g class="n1"><path d="M78 30v-16l10 3" stroke="#2B2320" stroke-width="5" fill="none"/><ellipse cx="74" cy="30" rx="5" ry="4" fill="#2B2320"/></g><g class="n2"><path d="M90 44v-14l9 3" stroke="#2B2320" stroke-width="5" fill="none"/><ellipse cx="86" cy="44" rx="5" ry="4" fill="#2B2320"/></g></svg>

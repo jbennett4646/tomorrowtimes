@@ -1,0 +1,132 @@
+/* The Tomorrow Times: mauve, mustard, and dental-office teal. On purpose. */
+:root {
+  --mauve: #B07A98;
+  --mauve-dark: #6E4560;
+  --mustard: #F2C14E;
+  --mustard-dark: #E0A43A;
+  --teal: #3E9A9C;
+  --teal-dark: #2E7E80;
+  --paper: #FBF3DF;
+  --beige: #EFDDB4;
+  --ink: #2B2320;
+  --rule: #C9B48A;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--beige);
+  font-family: Arial, "Liberation Sans", Helvetica, sans-serif;
+  color: var(--ink);
+}
+
+a { color: var(--ink); }
+a:hover, a:focus { color: var(--mauve-dark); }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--mauve-dark); outline-offset: 2px; }
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: var(--paper);
+  border-left: 4px solid var(--mauve);
+  border-right: 4px solid var(--mauve);
+  border-bottom: 4px solid var(--mauve);
+}
+
+/* Masthead */
+.mast { background: var(--mauve); padding: 22px 28px; display: flex; align-items: center; gap: 20px; }
+.mast a { text-decoration: none; }
+.mast h1, .mast .site-name {
+  margin: 0;
+  font-family: "Arvo", Georgia, serif;
+  font-size: clamp(34px, 6vw, 56px);
+  color: var(--mustard);
+  text-shadow: 3px 3px 0 var(--mauve-dark);
+}
+.mast p { margin: 6px 0 0; color: var(--paper); font-size: 17px; font-style: italic; }
+
+/* Nav */
+.nav { background: var(--teal); display: flex; flex-wrap: wrap; }
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-right: 2px solid var(--teal-dark);
+  font-size: 15px;
+}
+.nav a:hover, .nav a:focus { background: var(--teal-dark); color: #fff; }
+
+/* Layout */
+.cols { display: flex; gap: 22px; padding: 22px; align-items: flex-start; }
+.left { flex: 0 0 210px; }
+.main { flex: 1 1 auto; min-width: 0; }
+.right { flex: 0 0 240px; }
+
+/* Boxes */
+.box { background: #fff; border: 3px solid var(--teal); margin-bottom: 18px; }
+.box h3 { margin: 0; background: var(--teal); color: #fff; padding: 7px 10px; font-size: 15px; font-family: "Arvo", Georgia, serif; }
+.box.mustard { border-color: var(--mustard-dark); }
+.box.mustard h3 { background: var(--mustard-dark); color: var(--ink); }
+.box.mauve { border-color: var(--mauve); }
+.box.mauve h3 { background: var(--mauve); }
+.box-body { padding: 12px; font-size: 16px; line-height: 1.5; }
+
+.sec {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 10px; border-bottom: 1px dashed var(--rule);
+  font-weight: 700; font-size: 15px; text-decoration: none;
+}
+.sec:last-child { border-bottom: 0; }
+.sec img { width: 34px; height: 34px; flex: 0 0 34px; overflow: visible; }
+
+.mood { text-align: center; padding: 12px; }
+.mood p { margin: 6px 0 0; font-weight: 700; }
+
+/* Lead story */
+.lead { background: #fff; border: 3px solid var(--mustard-dark); padding: 24px 26px; }
+.kick { text-decoration: none;
+  display: inline-block; background: var(--mustard-dark); color: var(--ink); font-weight: 700; padding: 3px 8px; font-size: 13px; }
+.lead h2 { font-family: "Arvo", Georgia, serif; font-size: clamp(30px, 4.5vw, 46px); line-height: 1.12; margin: 12px 0; }
+.lead h2 a { text-decoration: none; }
+.lead p { font-size: 19px; line-height: 1.55; margin: 0; max-width: 640px; }
+
+/* Headline list */
+.list { background: #fff; border: 3px solid var(--mauve); margin-top: 18px; }
+.list h3 { margin: 0; background: var(--mauve); color: #fff; padding: 7px 12px; font-family: "Arvo", Georgia, serif; font-size: 17px; }
+.item {
+  display: flex; gap: 14px; align-items: center;
+  padding: 12px 14px; border-bottom: 1px dashed var(--rule);
+  font-size: 17px; font-weight: 700; text-decoration: none; line-height: 1.3;
+}
+.item:last-child { border-bottom: 0; }
+.item img { width: 30px; height: 30px; flex: 0 0 30px; overflow: visible; }
+
+/* Signup */
+.signup label { display: block; font-size: 14px; margin-bottom: 6px; }
+.signup input { width: 100%; min-height: 44px; border: 2px inset #ccc; padding: 0 8px; font: inherit; }
+.signup button {
+  margin-top: 8px; width: 100%; min-height: 44px;
+  background: var(--teal); color: #fff; font: inherit; font-weight: 700;
+  border: 2px outset #7FC4C5; cursor: pointer;
+}
+
+/* Article page */
+.article { background: #fff; border: 3px solid var(--mustard-dark); padding: 26px 30px; }
+.article h1 { font-family: "Arvo", Georgia, serif; font-size: clamp(30px, 4.5vw, 44px); line-height: 1.12; margin: 12px 0 18px; }
+.article p { font-size: 19px; line-height: 1.6; margin: 0 0 18px; max-width: 680px; }
+.article .dateline { font-weight: 700; }
+.article .back { display: inline-block; margin-top: 8px; font-weight: 700; }
+
+/* Footer */
+.foot { padding: 14px 22px; font-size: 13px; text-align: center; border-top: 2px dashed var(--rule); }
+
+/* Small screens */
+@media (max-width: 860px) {
+  .cols { flex-direction: column; }
+  .left, .right, .main { flex: 1 1 auto; width: 100%; }
+  .mast { padding: 16px; }
+}
+
+.mast .site-name { margin: 0; font-weight: 700; font-style: normal; line-height: 1.1; }

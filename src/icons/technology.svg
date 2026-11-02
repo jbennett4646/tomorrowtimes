@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="34" height="34" overflow="visible"><style>
+@keyframes drip{0%{transform:translateY(0);opacity:1}80%{transform:translateY(22px);opacity:1}100%{transform:translateY(26px);opacity:0}}
+@keyframes jitter{0%,100%{transform:translate(0,0)}25%{transform:translate(2px,0)}75%{transform:translate(-2px,0)}}
+.jit{animation:jitter .3s linear infinite}
+.d1{animation:drip 1.2s linear infinite;transform-box:fill-box}
+.d2{animation:drip 1.2s linear infinite .6s;transform-box:fill-box}
+@media (prefers-reduced-motion:reduce){.jit,.d1,.d2{animation:none}}
+</style><g class="jit"><rect x="12" y="16" width="70" height="52" rx="4" fill="#9FB7B8" stroke="#2B2320" stroke-width="5"/><rect x="19" y="23" width="56" height="38" fill="#DDF2F2"/><circle cx="38" cy="38" r="5" fill="#2B2320"/><circle cx="56" cy="38" r="5" fill="#2B2320"/><path d="M36 52q3-4 6 0t6 0t6 0" stroke="#2B2320" stroke-width="4" fill="none"/><path d="M40 68h14l4 12H36z" fill="#9FB7B8" stroke="#2B2320" stroke-width="5"/></g><path class="d1" d="M72 22q-5 8 0 11q5-3 0-11z" fill="#5FB7E8"/><path class="d2" d="M22 26q-5 8 0 11q5-3 0-11z" fill="#5FB7E8"/></svg>

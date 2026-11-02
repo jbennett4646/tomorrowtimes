@@ -1,0 +1,8 @@
+[
+  { "key": "consumer", "name": "Consumer" },
+  { "key": "corporate", "name": "Corporate" },
+  { "key": "private-equity", "name": "Private Equity" },
+  { "key": "technology", "name": "Technology" },
+  { "key": "customer-service", "name": "Customer Service" },
+  { "key": "home-front", "name": "Home Front" }
+]
