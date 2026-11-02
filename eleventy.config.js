@@ -1,6 +1,23 @@
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/icons");
+  eleventyConfig.addPassthroughCopy("src/share.png");
+
+  // Plain-text teaser from rendered HTML, for link-preview descriptions
+  eleventyConfig.addFilter("excerpt", (html, max = 160) => {
+    let src = String(html || "");
+    const firstPara = src.indexOf("<p");
+    if (firstPara > -1) src = src.slice(firstPara); // skip the kicker and headline, start at the dateline
+    const back = src.indexOf('class="back"');
+    if (back > -1) src = src.slice(0, src.lastIndexOf("<a", back)); // drop the "Back to the front page" link
+    const text = src
+      .replace(/<[^>]+>/g, " ")
+      .replace(/&quot;/g, '"').replace(/&#39;|&#x27;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
+      .replace(/\s+/g, " ")
+      .trim(); // plain text; the template escapes it once when writing the tag
+    if (text.length <= max) return text;
+    return text.slice(0, text.lastIndexOf(" ", max)).replace(/[,;:.\s]+$/, "") + "…";
+  });
 
   // All articles, newest first
   eleventyConfig.addCollection("articles", (api) =>

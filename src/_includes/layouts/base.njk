@@ -4,7 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if title %}{{ title }} | {% endif %}The Tomorrow Times</title>
-<meta name="description" content="{{ summary or title or 'Tomorrow’s news, delivered today.' }}">
+{%- set isArticle = dateline %}
+{%- set pageTitle = (title if isArticle else (title + ' | ' + site.name)) if title else site.name %}
+{%- set pageDesc = summary or (content | excerpt if isArticle) or 'Tomorrow’s news, delivered today. Additional fees may apply.' %}
+<meta name="description" content="{{ pageDesc }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:type" content="{{ 'article' if isArticle else 'website' }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDesc }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Tomorrow Times masthead: a yellow clock beside the paper's name.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap">

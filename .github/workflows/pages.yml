@@ -23,6 +23,8 @@ jobs:
       - run: npm install
       # base_path is "" on a custom domain and "/<repo>" on github.io, so links work on either.
       - run: npx @11ty/eleventy --pathprefix="${{ steps.pages.outputs.base_path }}/"
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
