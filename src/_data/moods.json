@@ -1,0 +1,9 @@
+[
+  { "key": "concerned", "name": "Concerned" },
+  { "key": "fine-probably", "name": "Fine, Probably" },
+  { "key": "bracing", "name": "Bracing for Impact" },
+  { "key": "pending-review", "name": "Pending Review" },
+  { "key": "on-hold", "name": "On Hold" },
+  { "key": "cautiously-pessimistic", "name": "Cautiously Pessimistic" },
+  { "key": "already-over-it", "name": "Already Over It" }
+]

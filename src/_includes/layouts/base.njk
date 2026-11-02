@@ -29,7 +29,23 @@
 <a class="sec" href="{{ ('/' + s.key + '/') | url }}"><img src="{{ ('/icons/' + s.key + '.svg') | url }}" alt="">{{ s.name }}</a>
 {%- endfor %}
 </div>
-<div class="box"><h3>Today’s Mood</h3><div class="mood"><img src="{{ '/icons/mood-concerned.svg' | url }}" width="90" height="60" alt=""><p>Concerned</p></div></div>
+<div class="box"><h3>Today’s Mood</h3><div class="mood" id="mood"><img src="{{ '/icons/mood-concerned.svg' | url }}" width="90" height="60" alt=""><p>Concerned</p></div></div>
+<script>
+// One mood per calendar day, the same for every visitor, never the same two days in a row.
+(function () {
+  var moods = {{ moods | dump | safe }};
+  var base = "{{ '/icons/' | url }}";
+  function hash(s) { var h = 2166136261; for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+  function raw(d) { return hash(d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate()) % moods.length; }
+  var today = new Date(); today.setHours(12, 0, 0, 0);
+  var yesterday = new Date(today); yesterday.setDate(today.getDate() - 1);
+  var i = raw(today);
+  if (i === raw(yesterday)) i = (i + 1) % moods.length;
+  var box = document.getElementById("mood");
+  box.querySelector("img").src = base + "mood-" + moods[i].key + ".svg";
+  box.querySelector("p").textContent = moods[i].name;
+})();
+</script>
 </aside>
 {%- endif %}
 <main class="main">
