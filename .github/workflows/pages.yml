@@ -18,8 +18,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - id: pages
+        uses: actions/configure-pages@v5
       - run: npm install
-      - run: npx @11ty/eleventy --pathprefix="/${{ github.event.repository.name }}/"
+      # base_path is "" on a custom domain and "/<repo>" on github.io, so links work on either.
+      - run: npx @11ty/eleventy --pathprefix="${{ steps.pages.outputs.base_path }}/"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
