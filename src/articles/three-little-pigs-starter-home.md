@@ -3,6 +3,9 @@ title: "Pigs Can't Afford Straw, Sticks, or Bricks, Settle for \"Starter Home\" 
 section: consumer
 date: 2026-08-09
 dateline: "PHOENIX, AZ"
+image: /images/three-pigs-leave-home.jpg
+image_alt: "Cartoon of a mother pig in an apron waving from a doorway as three worried little pigs with backpacks walk off down a winding path"
+caption: "The three little pigs set out on their housing search in The Three Little Pigs: 2026 Edition."
 ---
 
 A stark new edition of *The Three Little Pigs*, published this week under the title *The Three Little Pigs: 2026 Edition*, concludes with the story's beloved trio pooling their savings to purchase a cardboard box listed as a "cozy starter home" for $389,000, before the Big Bad Wolf, unimpeded by any meaningful structure, simply walks in and eats all three of them.

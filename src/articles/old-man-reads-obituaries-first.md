@@ -3,6 +3,9 @@ title: "Old Man Reads Obituaries First Every Morning to Make Sure He Isn't In Th
 section: home-front
 date: 2026-09-24
 dateline: "DOTHAN, AL"
+image: /images/obituaries-reader.jpg
+image_alt: "Cartoon of a smiling elderly man in glasses and a cardigan reading a newspaper in an armchair beside a cup of coffee"
+caption: "Harold Benson, 90, shortly after confirming he is not in today’s obituaries."
 ---
 
 Retired pharmacist Harold Benson, 90, begins every morning by opening the local newspaper directly to the obituaries, scanning carefully for his own name before moving on to the rest of the paper, a practice he describes as "basic due diligence."

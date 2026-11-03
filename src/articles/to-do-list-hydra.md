@@ -3,6 +3,9 @@ title: "Man Crosses One Item Off Wife’s To-Do List, Three New Items Grow in It
 section: home-front
 date: 2026-10-28
 dateline: "MARIETTA, GA"
+image: /images/to-do-hydra.jpg
+image_alt: "Cartoon of a tired man holding a screwdriver and a long to-do list that has grown into a three-headed hydra, with new task cards sprouting from a crossed-off item"
+caption: "Scott Halvorsen and his household to-do list, shortly after he crossed off “fix squeaky cabinet.”"
 ---
 
 Marietta resident Scott Halvorsen, 43, stood in stunned silence in his kitchen Saturday morning after crossing “fix squeaky cabinet” off his wife’s to-do list and watching three new items appear in its place almost immediately.
