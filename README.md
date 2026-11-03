@@ -20,6 +20,22 @@ Bulk loading works the same way: drop in as many `.md` files as you like and pus
 
 Only one article should have `featured: true`. If none do, the newest article becomes the cover story.
 
+## Adding an image to an article
+
+Images are optional. Put the image file in `src/images/` (a wide picture works best; it is shown at a 16:8 ratio and cropped to fit), then add these lines to the article's top block:
+
+```
+image: /images/boutique-salesman.jpg
+image_alt: "Cartoon of a bored salesman in a gray suit standing still"
+caption: "Sales associate Julian Marchetti, pictured during his 1,800th consecutive shift."
+```
+
+- `image`: the path to the file, starting with `/images/`
+- `image_alt`: a short description of the picture for screen readers and anyone whose images don't load
+- `caption` (optional): the small italic line shown under the picture
+
+With an image, the article page shows it under the headline, the cover story shows it across the top of the cover box, and headline lists use it as a thumbnail. Without one, everything looks as it did before, with the section icon in the lists.
+
 ## Project layout
 
 ```
@@ -30,7 +46,8 @@ src/
   _includes/layouts/   Page templates (base.njk = shared shell, article.njk = article page)
   index.njk            Homepage
   css/style.css        All styling; the palette is in the :root variables
-  icons/               Section icons (technology and customer-service are animated)
+  icons/               Section and mood icons (several section icons are animated)
+  images/              Article photos (optional; see "Adding an image to an article")
 eleventy.config.js     Eleventy settings
 vercel.json            Vercel build settings
 .github/workflows/     GitHub Pages deployment
@@ -58,4 +75,4 @@ Then open http://localhost:8080.
 ## Not wired up yet
 
 - The "Sign Me Up!" form does nothing; connect a newsletter service later.
-- Weather and Today's Mood are static text.
+- Today's Mood picks one of the moods in `src/_data/moods.json` each day.

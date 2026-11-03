@@ -1,0 +1,6 @@
+{#- Headline-list art: the article's photo as a thumbnail when it has one, otherwise its section icon. Expects `a`. -#}
+{%- if a.data.image -%}
+<img class="thumb" src="{{ a.data.image | url }}" alt="">
+{%- else -%}
+<img src="{{ ('/icons/' + a.data.section + '.svg') | url }}" alt="">
+{%- endif -%}

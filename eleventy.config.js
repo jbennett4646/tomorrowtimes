@@ -3,6 +3,7 @@ import { renderCards } from "./og/render.js";
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/icons");
+  eleventyConfig.addPassthroughCopy("src/images");
 
   // Plain-text teaser from rendered HTML, for link-preview descriptions
   eleventyConfig.addFilter("excerpt", (html, max = 160) => {

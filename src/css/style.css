@@ -85,7 +85,9 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .mood p { margin: 6px 0 0; font-weight: 700; }
 
 /* Lead story */
-.lead { background: #fff; border: 3px solid var(--mustard-dark); padding: 24px 26px; }
+.lead { background: #fff; border: 3px solid var(--mustard-dark); overflow: hidden; }
+.lead-body { padding: 24px 26px; }
+.lead-img { display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-bottom: 3px solid var(--mustard-dark); }
 .kick { text-decoration: none;
   display: inline-block; background: var(--mustard-dark); color: var(--ink); font-weight: 700; padding: 3px 8px; font-size: 13px; }
 .lead h2 { font-family: "Arvo", Georgia, serif; font-size: clamp(30px, 4.5vw, 46px); line-height: 1.12; margin: 12px 0; }
@@ -102,6 +104,9 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 }
 .item:last-child { border-bottom: 0; }
 .item img { width: 30px; height: 30px; flex: 0 0 30px; overflow: visible; }
+.item img.thumb { width: 110px; height: 62px; flex: 0 0 110px; object-fit: cover; border: 2px solid var(--ink); overflow: hidden; }
+.item-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.item .cat { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--mauve-dark); }
 
 /* Signup */
 .signup label { display: block; font-size: 14px; margin-bottom: 6px; }
@@ -128,6 +133,9 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .article h1 { font-family: "Arvo", Georgia, serif; font-size: clamp(30px, 4.5vw, 44px); line-height: 1.12; margin: 12px 0 18px; }
 .article p { font-size: 19px; line-height: 1.6; margin: 0 0 18px; max-width: 680px; }
 .article .dateline { font-weight: 700; }
+.article-figure { margin: 0 0 18px; }
+.article-figure img { display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border: 3px solid var(--ink); }
+.article-figure figcaption { margin-top: 6px; font-size: 13px; font-style: italic; color: #5a4d47; line-height: 1.4; }
 .article .back { display: inline-block; margin-top: 8px; font-weight: 700; }
 
 /* Footer */

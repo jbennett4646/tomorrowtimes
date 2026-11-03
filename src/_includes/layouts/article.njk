@@ -4,6 +4,9 @@ hideLeftRail: true
 ---
 <article class="article"><a class="kick" href="{{ ('/' + section + '/') | url }}">{{ section | sectionName(sections) | upper }}</a>
 <h1>{{ title }}</h1>
+{%- if image %}
+<figure class="article-figure"><img src="{{ image | url }}" alt="{{ image_alt }}">{% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}</figure>
+{%- endif %}
 <p><span class="dateline">{{ dateline }}</span> — {{ content | replace("<p>", "", 1) | safe }}
 <a class="back" href="{{ '/' | url }}">Back to the front page</a>
 </article>
