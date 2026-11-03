@@ -3,6 +3,9 @@ title: "Company Spends $14 Million on New Logo, Unveils Slightly Different Shade
 section: corporate
 date: 2026-11-01
 dateline: "NASHVILLE, TN"
+image: /images/beige-logos.jpg
+image_alt: "Two nearly identical blank beige canvases on easels, the second one slightly lighter, beside a gold trophy on a stack of cash"
+caption: "Hearthstone Kitchen’s old logo, left, and its new $14 million logo, right."
 ---
 
 Regional restaurant chain Hearthstone Kitchen unveiled its long-awaited new logo Tuesday, the result of a two-year, $14 million rebranding effort, revealing a design that customers, employees, and at least one ophthalmologist have confirmed is the old logo in a slightly different shade of beige.

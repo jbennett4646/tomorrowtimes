@@ -3,6 +3,9 @@ title: "Customer Service Line Experiencing Higher Than Normal Call Volume for 17
 section: customer-service
 date: 2026-10-29
 dateline: "CHARLOTTE, NC"
+image: /images/hold-music-phone.jpg
+image_alt: "Cartoon rotary phone with a weary face, its receiver off the hook and covered in a cobweb, surrounded by music notes and flying calendar pages"
+caption: "A Verilink customer service line during its 149,000th consecutive hour of higher than normal call volume."
 ---
 
 Telecommunications giant Verilink confirmed Tuesday that its customer service line is currently experiencing higher than normal call volume, marking the 17th consecutive year the company has reported unusually high demand every hour of every day since the line opened in 2009.

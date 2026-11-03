@@ -3,6 +3,9 @@ title: "Private Equity Firm Acquires Beloved Family Diner, Immediately Identifie
 section: private-equity
 date: 2026-10-31
 dateline: "DAHLONEGA, GA"
+image: /images/grandma-biscuits.jpg
+image_alt: "Cartoon of an elderly woman in an apron holding a tray of biscuits while a young man in a fleece vest times her with a stopwatch and clipboard"
+caption: "Mae Whitlow, left, during a routine efficiency review of her biscuits."
 ---
 
 Just 48 hours after closing its acquisition of Mae’s Kitchen, a 52-year-old family diner beloved across north Georgia, private equity firm Ridgeline Capital Partners delivered its first operational assessment to staff, identifying 81-year-old founder Mae Whitlow as the restaurant’s “single largest cost center.”

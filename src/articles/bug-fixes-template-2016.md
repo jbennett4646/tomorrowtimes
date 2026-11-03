@@ -3,6 +3,9 @@ title: "Developer Admits “Bug Fixes and Performance Improvements” Is a Templ
 section: technology
 date: 2026-10-30
 dateline: "SAN FRANCISCO, CA"
+image: /images/bug-fixes-phone.jpg
+image_alt: "Cartoon smartphone with a bandage on its screen and a nervous smile, as a small bug peeks out from behind it"
+caption: "The Dashly app, shown after its 1,847th round of bug fixes and performance improvements."
 ---
 
 Veteran mobile developer Aaron Mitchell, 38, admitted Tuesday that the phrase “Bug fixes and performance improvements,” which has appeared in the release notes of every update to the popular food delivery app Dashly since 2016, is a template he wrote on his first day at the company and has never once revised.

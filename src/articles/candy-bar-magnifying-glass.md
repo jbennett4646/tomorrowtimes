@@ -3,6 +3,9 @@ title: "Candy Bar Shrinks for Eighth Straight Year, Now Sold With Magnifying Gla
 section: consumer
 date: 2026-11-02
 dateline: "HERSHEY, PA"
+image: /images/candy-bar-magnifier.jpg
+image_alt: "Cartoon candy bar wrapper with a worried face holding a magnifying glass over a tiny piece of chocolate"
+caption: "A Caramel Crunch bar, seen here with the aid of its complimentary 10x magnifying glass."
 ---
 
 Confectionery giant Brightwell Brands announced Tuesday that its flagship Caramel Crunch bar will shrink for the eighth consecutive year, and will now be packaged with a complimentary 10x magnifying glass so that customers can locate the candy inside the wrapper.
