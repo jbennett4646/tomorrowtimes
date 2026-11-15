@@ -3,6 +3,7 @@ title: "Man Verifies He's Not a Robot for 11th Time Today, Starting to Doubt It 
 section: technology
 date: 2026-04-25
 dateline: "SPOKANE, WA"
+featured: true
 image: /images/man-verifies-hes-not-a-robot-for-11th-time-today-starting-to.jpg
 image_alt: "Cartoon exhausted man scratching his head at a laptop showing a grid of blank squares and a tiny robot icon"
 caption: "Kevin Wu, still unsure whether a bicycle wheel counts as a bicycle."
