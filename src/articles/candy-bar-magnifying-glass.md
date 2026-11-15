@@ -3,6 +3,9 @@ title: "Candy Bar Shrinks for Eighth Straight Year, Now Sold With Magnifying Gla
 section: consumer
 date: 2026-06-13
 dateline: "HERSHEY, PA"
+image: /images/candy-bar-magnifier.jpg
+image_alt: "Cartoon candy bar wrapper with a worried face holding a magnifying glass over a tiny piece of chocolate"
+caption: "A Caramel Crunch bar, seen here with the aid of its complimentary 10x magnifying glass."
 summary: "The King Size is now 0.8 ounces. The dividend is not. Customers are asked to hold the lens four inches above the wrapper and search slowly, with patience."
 ---
 
