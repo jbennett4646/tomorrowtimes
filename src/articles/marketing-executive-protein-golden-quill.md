@@ -3,7 +3,6 @@ title: "Marketing Executive Who Discovered Word “Protein” Can Go on Anything
 section: consumer
 date: 2026-11-05
 dateline: "NEW YORK, NY"
-featured: true
 summary: "Before Derek Halloway, protein was something you found in chicken and eggs. After him, it was something you found on the front of a box of frosted toaster pastries."
 image: /images/protein-toaster-pastry.jpg
 image_alt: "Cartoon toaster pastry with a smiling face flexing muscular arms beside a dumbbell"
