@@ -3,6 +3,9 @@ title: "Subreddit Rules Now Longer Than U.S. Tax Code, Include Rule 47(c)(ii): \
 section: technology
 date: 2026-08-30
 dateline: "INTERNET"
+image: /images/subreddit-rules-now-longer-than-u-s-tax-code-include-rule-47.jpg
+image_alt: "Cartoon towering stack of paper with a tired face and a ribbon bookmark hanging like a tongue, beside a tiny hammer and tape measure"
+caption: "The r/HomeImprovementHelp rulebook, shown with the tools it was meant to govern."
 ---
 
 Moderators of r/HomeImprovementHelp announced Thursday that the subreddit's official rulebook has reached 4.1 million words, officially surpassing the length of the U.S. Tax Code and making it, according to experts, "the most complex set of laws ever created for discussing drywall."
