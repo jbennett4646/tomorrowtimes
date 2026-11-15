@@ -3,6 +3,9 @@ title: "Self-Described Egalitarian Moderates 412 Subreddits, Rules Over 80 Milli
 section: technology
 date: 2026-08-25
 dateline: "INTERNET"
+image: /images/self-described-egalitarian-moderates-412-subreddits-rules.jpg
+image_alt: "Cartoon man in a crown and royal robe waving from a laptop throne"
+caption: "u/EquitableVoice_88 surveys his domain, which at last count included r/Woodworking."
 ---
 
 Reddit moderator u/EquitableVoice_88, who describes himself in his profile as "a passionate advocate for equality, democracy, and the dismantling of all unjust hierarchies," confirmed Tuesday that he currently moderates 412 subreddits with a combined membership of more than 80 million users, granting him unchecked authority over a population larger than Germany.
